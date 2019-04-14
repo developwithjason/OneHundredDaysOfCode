@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Developing With Jason</h1>
+        <h3>#100 Days Of Code</h3>
+    </header>
+    <section id='todo-operations'>
+        <input type="text" name="inpText" id="inpText" placeholder="What needs to happen?">
+        <button id="addBtn">Add Todo</button>
+    </section>
+    <section id="todo-storage">
+        <ul id="todo-list">
+            <li class="todo-list-item">
+                <input type="text" class="item-input" value='Item One'>
+                <div class="item-op">
+                    <button class="complete"><i class='fas fa-check'></i></button>
+                    <button class="trash"><i class='fas fa-trash-alt'></i></button>
+                </div>
+            </li>
+            <li class="todo-list-item">
+                <input type="text" class="item-input" value='Item Two'>
+                <div class="item-op">
+                    <button class="complete"><i class='fas fa-check'></i></button>
+                    <button class="trash"><i class='fas fa-trash-alt'></i></button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
