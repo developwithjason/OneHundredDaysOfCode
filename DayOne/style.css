@@ -91,6 +91,7 @@ header {
     border-radius: 5px;
     outline: none;
     border: none;
+    background: rgba(7, 242, 242, 0.2); 
 }
 
 .item-op {
@@ -103,7 +104,8 @@ header {
 }
 
 .complete,
-.trash {
+.trash,
+.update {
     width: 50px;
     height: 40px;
     padding: 10px;
@@ -119,4 +121,17 @@ header {
 .trash {
     background: #ba2e35;
     color: #f9f9f9;
+}
+
+.update {
+    background: #f9f348;
+    color: #f9f9f9;
+}
+
+.rm-evt {
+    pointer-events: none;
+}
+
+.completeList {
+    text-decoration: line-through;
 }
