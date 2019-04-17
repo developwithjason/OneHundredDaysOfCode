@@ -15,25 +15,26 @@
         <section class="calculator__input-area">
             <div class="inp-num">0</div>
         </section>
-        <div id="clear">AC</div>
-        <div id="pos-neg">+/-</div>
-        <div id="percent">&#37;</div>
-        <div class="operator" id="divide">&#247;</div>
-        <div class="calc-num">7</div>
-        <div class="calc-num">8</div>
-        <div class="calc-num">9</div>
-        <div class="operator" id="multiply">X</div>
-        <div class="calc-num">4</div>
-        <div class="calc-num">5</div>
-        <div class="calc-num">6</div>
-        <div class="operator" id="sub">-</div>
-        <div class="calc-num">1</div>
-        <div class="calc-num">2</div>
-        <div class="calc-num">3</div>
-        <div class="operator" id="add">+</div>
-        <div class="calc-num zero">0</div>
-        <div id="decimal">.</div>
-        <div class="operator" id="equal">=</div>
+        <div class="keys action clear" data-value="clear">AC</div>
+        <div class="keys action pos-neg" data-value="pos-neg">+/-</div>
+        <div class="keys action" id="percent" data-value="%">&#37;</div>
+        <div class="operator keys" id="divide" data-value="/">&#247;</div>
+        <div class="calc-num keys" data-value="7">7</div>
+        <div class="calc-num keys" data-value="8">8</div>
+        <div class="calc-num keys" data-value="9">9</div>
+        <div class="operator keys" id="multiply" data-value="*">x</div>
+        <div class="calc-num keys" data-value="4">4</div>
+        <div class="calc-num keys" data-value="5">5</div>
+        <div class="calc-num keys" data-value="6">6</div>
+        <div class="operator keys" id="sub" data-value="-">-</div>
+        <div class="calc-num keys" data-value="1">1</div>
+        <div class="calc-num keys" data-value="2">2</div>
+        <div class="calc-num keys" data-value="3">3</div>
+        <div class="operator keys" id="add" data-value="+">+</div>
+        <div class="calc-num zero keys" data-value="0">0</div>
+        <div class="keys" id="decimal" data-value=".">.</div>
+        <div class="keys action" id="equal" data-value="calculate">=</div>
     </section>
+    <script src="./js/calc.js"></script>
 </body>
 </html>
