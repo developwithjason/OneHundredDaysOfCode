@@ -118,6 +118,10 @@ main {
     font-size: 1.2rem;
 }
 
+.portfolio__list {
+    list-style-type: none;
+}
+
 /* Comment Styling */
 
 .comment_divide {
@@ -161,7 +165,7 @@ main {
 }
 
 .user_comments__comment p {
-    width: 200px;
+    width: 100px;
     height: 200px;
     margin-top: 40px;
 }
@@ -188,4 +192,128 @@ footer {
     margin: 30% 20px 0 20px;
     display: flex;
     justify-content: space-around;
+}
+
+@media(min-width: 700px) {
+    /* Cards */
+
+    .cards__item {
+        border: 1px solid #0d0d0d;
+        height: 620px;
+    }
+
+    .cards__wrapper {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-gap: 15px;
+        margin-left: 35px;
+        border-radius: 15px;
+    }
+
+    .cards__image {
+        height: 350px;
+    }
+
+    .cards__image h3 {
+        width: 100px;
+        font-size: 1.5rem;
+        margin: -80px 0 0 20px;
+    }
+
+    .cards__content p {
+        width: 150px;
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+
+    /* About */
+
+    .about {
+        margin-top: 40px;
+    }
+
+    /* User Comments */
+
+    .user_comments__wrapper {
+        width: 80%;
+        height: 500px;
+        margin: -200px 0 10px 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .user_comments_comment p {
+        width: 300px;
+        height: 200px;
+        margin: 50px 25%;
+    }
+
+    .user_comments__image img {
+        margin: 50px 25%;
+    }
+
+    .contact {
+        margin-top: -100px;
+    }
+}
+
+@media ( min-width: 900px) {
+    .cards__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+    }
+
+    .cards__image h3 {
+        width: 300px;
+        font-size: 1.8rem;
+        margin: -80px auto;
+        color: #2ECEF2;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .cards__content p {
+        width: 300px;
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+
+    /* Portfolio */
+
+    .portfolio {
+        margin-left: 5%;
+    }
+
+    .portfolio__list {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: 0 40px 0 40px;
+    }
+
+    .portfolio__content p {
+        width: 400px;
+        margin-left: -10px;
+    }
+
+    /* User Comments */
+
+    .user_comments__wrapper {
+        width: 100%;
+        height: 500px;
+        margin-top: -200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  repeat(3, 200px);
+        grid-gap: 30%;
+    }
+
+    .user_comments__comment p {
+        width: 300px;
+        height: 200px;
+        margin-top: 8%;
+    }
 }
