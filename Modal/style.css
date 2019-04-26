@@ -1,0 +1,90 @@
+.openmodal {
+    padding: 15px 15px;
+    font-size: 1rem;
+    background: #07F2F2;
+    color: #F2F2F2;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.outer-modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1;
+}
+
+.modal-body {
+    width: 75%;
+    height: 500px;
+    background: #f2f2f2;
+    margin: 10% auto;
+    animation-name: smooth;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.modal-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #44AFF2;
+    color: #f2f2f2;
+    position: relative;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    margin: 0 20px;
+}
+
+.close {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 10;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #f2f2f2;
+    transition: all 1s ease-in-out;
+}
+
+.close:hover {
+    background: #FF8329;
+}
+
+.modal-content p {
+    margin-top: -20px;
+    padding: 30px;
+}
+
+.modal-content a {
+    margin: -100px 0 0 10%;
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    background: #07F2F2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.modal-footer {
+    padding: 10px;
+    height: 100px;
+    background: #ddd;
+    color: #0d0d0d;
+}
+
+@keyframes smooth {
+    from {opacity: 0}
+    to{opacity: 1}
+}
