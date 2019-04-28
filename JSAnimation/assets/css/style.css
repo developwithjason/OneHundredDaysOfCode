@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #44aff2;
+}
+p {
+  font-size: 1.8rem;
+  margin-left: 35%;
+}
+img {
+  width: 100%;
+}
+.plug {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.plug .logo {
+  width: 300px;
+}
+.plug .text {
+  width: 120px;
+  font-size: 2.4rem;
+  color: #44aff2;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 400px;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.social li {
+  cursor: pointer;
+}
+.social img {
+  width: 80px;
+}
